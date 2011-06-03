@@ -1,5 +1,7 @@
-# GemAWeek Base Rails Application
+# GemAWeek Episode 2 - Active Admin
 
-This is the base application for GemAWeek episodes. Please go to the
-individual episode to get the source for that particular one. This
-application will change over time as new episodes are created
+Active Admin is a framework for creating administration style
+interfaces. It abstracts common business application patterns to make it
+simple for developers to implement beautiful and elegant interfaces with
+very little effort.
+[https://github.com/gregbell/active_admin](https://github.com/gregbell/active_admin)
