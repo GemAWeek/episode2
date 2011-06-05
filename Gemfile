@@ -7,6 +7,13 @@ gem 'rails', '3.0.7'
 
 gem 'sqlite3'
 
+group :test do
+  gem 'minitest'
+  gem 'mini_specunit'
+  gem 'mini_backtrace'
+  gem 'mini_shoulda'
+end
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

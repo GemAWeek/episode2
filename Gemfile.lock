@@ -39,6 +39,14 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    mini_backtrace (0.1.1)
+      minitest (> 1.2.0)
+      rails (> 2.3.2)
+    mini_shoulda (0.3.0)
+      minitest (~> 2.1.0)
+    mini_specunit (0.1.1)
+      minitest
+    minitest (2.1.0)
     polyglot (0.3.1)
     rack (1.2.3)
     rack-mount (0.6.14)
@@ -69,5 +77,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  mini_backtrace
+  mini_shoulda
+  mini_specunit
+  minitest
   rails (= 3.0.7)
   sqlite3
