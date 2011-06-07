@@ -6,12 +6,9 @@ gem 'rails', '3.0.7'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-
+gem 'activeadmin'
 group :test do
-  gem 'minitest'
-  gem 'mini_specunit'
-  gem 'mini_backtrace'
-  gem 'mini_shoulda'
+  gem 'turn', :require => false
 end
 
 # Use unicorn as the web server

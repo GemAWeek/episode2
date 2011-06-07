@@ -1,10 +1,8 @@
 require 'test_helper'
-require 'minitest/spec'
 
 class PostsControllerTest < ActionController::TestCase
-  tests PostsController
 
-  before do
+  setup do
     @post = posts(:one)
   end
 
@@ -15,7 +13,7 @@ class PostsControllerTest < ActionController::TestCase
 
   test "should list posts" do
     get :index
-    assigns(:posts).wont_be_nil
+    assert_not_nil assigns(:posts)
   end
 
   test "should get new" do
@@ -24,8 +22,9 @@ class PostsControllerTest < ActionController::TestCase
   end
 
   test "should create post" do
-    post :create, :post => @post.attributes
-    Post.count.wont_be_nil
+    assert_difference('Post.count', 1) do
+      post :create, :post => @post.attributes
+    end
   end
 
   test "should redirect to the post after create" do
